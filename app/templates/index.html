@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja">
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="ja">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>MongoDB + Flask</title>
+</head>
+<body>
+    {% if message %}<p>{{ message }}</p>{% endif %}
+
+    <p><a href='/search'>検索ぺぇじ (Search Page)</a></p>
+
+    <form method='POST' action=''>
+        名前 (Name)：<input type='text' name='name' size='50'><br>
+        <br>
+        欲しい酒 (Which alcohol do you want?)：<br>
+        <input type='checkbox' name='sake' value='sake'> 日本酒(Sake)<br>
+        <input type='checkbox' name='beer' value='beer'> ビール(Beer)<br>
+        <input type='checkbox' name='vocka' value='vocka'> ウォッカ(Vocka)<br>
+        <input type='checkbox' name='whisky' value='whisky'> ウイスキー(Whisky)<br>
+        <br>
+        <input type='submit' value='欲しい酒送信(Register)'>
+    </form>
+</body>
+</html>
